@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GameElements>
+  <Resolution>
+    <X>1366</X>
+    <Y>768</Y>
+  </Resolution>
+  <Background texture_path="Other/background"/>
+  <Player position="0,0" size="100,100" texture_path="player" HP="100" attackDamage ="40" maxJumpHeight = "220" baseVelocity = "5"
+          bulletTexturePath="Player/player_bullet"
+          bonusVelocityDuration="6" bonusVelocityAcceleration="3"/>
+  <Platforms>
+    <stats>
+      <GluePlatform speedFactor="0.5" texture_path="Platforms/glue_platform"/>
+      <CommonPlatform texture_path="Platforms/common_platform"/>
+      <CrustyPlatform time="3000"/>
+      <IcyPlatform speedFactor="2.0" texture_path="Platforms/icy_platform"/>
+      <LeakyPlatform texture_path="Platforms/leaky_platform"/>
+      <MovingPlatform texture_path="Platforms/common_platform"/>
+    </stats>
+    <platforms>
+      <CommonPlatform position="0,648" size="1200,120"/>
+      <CrustyPlatform position="1200,500" size="200,30" />
+      <CrustyPlatform position="1500,300" size="200,30" />
+      <CrustyPlatform position="1800,100" size="200,30" />
+      <CommonPlatform position="2200,648" size="1800,120"/>
+      <CommonPlatform position="4000,100" size="30,678"/>
+      <CommonPlatform position="3800,500" size="80,30" />
+      <CommonPlatform position="3920,300" size="80,30" />
+      <CommonPlatform position="3770,0" size="30,530" />
+      <CommonPlatform position="3770,100" size="80,30" />
+      <CommonPlatform position="4000,150" size="3000,30" />
+      <CommonPlatform position="7300,648" size="3000,120" />
+      <CommonPlatform position="9300,0" size="30,500" />
+      <CommonPlatform position="9480,0" size="30,500" />
+      <LeakyPlatform position="9330,470" size="150,30"/>
+      <LeakyPlatform position="9330,300" size="150,30"/>
+      <LeakyPlatform position="9330,100" size="150,30"/>
+      <CommonPlatform position="10400,550" size="150,30" />
+      <CommonPlatform position="10600,450" size="150,30" />
+      <CommonPlatform position="10800,350" size="150,30" />
+      <CommonPlatform position="11000,400" size="200,30" />
+      <MovingPlatform position="11200,300" size="200,30" range="300,0" velocity="3,0"/>
+      <MovingPlatform position="11900,500" size="200,30" range="400,0" velocity="4,0"/>
+      <MovingPlatform position="12600,500" size="200,30" range="400,0" velocity="3,0"/>
+      <MovingPlatform position="13000,100" size="200,30" range="0,400" velocity="0,3"/>
+      <CommonPlatform position="13300,100" size="1000,30" />
+      <CommonPlatform position="14600,500" size="400,30" />
+      <GluePlatform position="15000,500" size="400,30"/>
+      <IcyPlatform position="15400,500" size="400,30"/>
+      <GluePlatform position="15800,500" size="400,30"/>
+      <IcyPlatform position="16200,500" size="400,30"/>
+      <GluePlatform position="16600,500" size="400,30"/>
+      <IcyPlatform position="17000,500" size="400,30"/>
+      <GluePlatform position="17400,500" size="400,30"/>
+      <IcyPlatform position="17800,500" size="400,30"/>
+      <GluePlatform position="18200,500" size="400,30"/>
+      <CommonPlatform position="18800,500" size="200,30" />
+      <CommonPlatform position="19200,500" size="200,30" />
+      <CommonPlatform position="19600,500" size="200,30" />
+      <CommonPlatform position="19800,500" size="2000,30" />
+    </platforms>
+  </Platforms>
+  <Enemies>
+    <enemiesStats>
+      <NotSmartEnemy size="83,80" HP="50" AttackDamage="20" Range="0" velocity="2,5" 
+                     texture_path="Enemies/zombie" Delay="3"/>      
+      <FlyingEnemy size="170,160" HP="50" BulletDamage="30" Range="400" velocity="1,1" MaxHeight="100" texture_path="Enemies/drake"
+                 BulletSize="75,75" BulletVelocity="15" bulletTexture="Enemies/FlyingEnemy/strzal_06" Delay="3"/>
+      <DamnEnemy size="40,80" HP="50" BulletDamage="10" Range="300" velocity="2,2" texture_path="Enemies/dogeprim"
+                 BulletSize="15,15" BulletVelocity="15,0" bulletTexture="Enemies/beam" Delay="3"/>
+      <BossEnemy size="60,60" HP="100" BulletDamage="10" Range="150" velocity="4,4" texture_path="Enemies/bosss"
+                 BulletSize="15,15" BulletVelocity="10,10" bulletTexture="Enemies/beam" Delay="3"/>
+      <JumpingEnemy size="50,50" HP="100" BulletDamage="10" Range="800" velocity="2,5" MaxJumpHeight="150" texture_path="Enemies/skoczek"
+                 BulletSize="15,15" BulletVelocity="10,0" bulletTexture="Enemies/beam" Delay="3"/>
+      <StaticEnemy size="61,19" HP="50" BulletDamage="20" Range="800" texture_path="Enemies/static"
+                 BulletSize="31,14" BulletVelocity="15" bulletTexture="Enemies/StaticEnemy/bullet" Delay="1"/>
+    </enemiesStats>
+    <enemies>
+      <FlyingEnemy position="2900,50" Direction="Left"/>
+      <FlyingEnemy position="3100,150" Direction="Left"/>
+      <FlyingEnemy position="3300,50" Direction="Left"/>
+      <StaticEnemy position="4500,500"/>
+      <StaticEnemy position="5000,500"/>
+      <StaticEnemy position="5500,500"/>
+      <StaticEnemy position="6000,500"/>
+      <StaticEnemy position="6500,500"/>
+      <NotSmartEnemy position="1000,500" Direction="Left"/> <!--8300-->
+      <NotSmartEnemy position="8400,500" Direction="Left"/>
+      <NotSmartEnemy position="8500,500" Direction="Left"/>
+      <NotSmartEnemy position="8600,500" Direction="Left"/>
+      <NotSmartEnemy position="8700,500" Direction="Left"/>
+      <NotSmartEnemy position="8800,500" Direction="Left"/>
+      <NotSmartEnemy position="8900,500" Direction="Left"/>
+      <NotSmartEnemy position="9000,500" Direction="Left"/>
+      <NotSmartEnemy position="9350,100" Direction="Right"/>
+      <JumpingEnemy position="11100,300" Direction="Left" />
+      <StaticEnemy position="16000,50"/>
+      <StaticEnemy position="16800,50"/>
+      <StaticEnemy position="17600,50"/>
+      <FlyingEnemy position="19600,50" Direction="Left"/>
+      <FlyingEnemy position="19800,50" Direction="Left"/>
+    </enemies>
+  </Enemies>
+  <PlayerBonuses>
+    <playerBonuses>
+      <PlayerBonusIncreaseVelocity position="3800,0" size="60,60" texture_path="Player/BonusVelocity" />
+      <PlayerBonusIncreaseHP position="5000,0" size="60,60" texture_path="Player/BonusHeart" />
+      <PlayerBonusChangeBulletsType position="9350,0" size="60,60" texture_path="Player/BonusBullet" />
+      
+    </playerBonuses>
+  </PlayerBonuses>
+</GameElements>

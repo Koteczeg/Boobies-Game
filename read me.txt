@@ -1,0 +1,3 @@
+Gra tworzona w okresie 01.09.2014 - 31.12.2014, w projekcie bra³y udzia³ 3 osoby.
+Mamy œwiadomoœæ tego ¿e wiele rzeczy mo¿na by³o zrobiæ lepiej;
+jednak nie chodzi³o nam o dopieszczenie kodu tylko na dodaniu mo¿liwie najwiêcej funkcjonalnoœci. Po dacie deadline'u zakoñczyliœmy pracê nad gr¹.
